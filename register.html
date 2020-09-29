@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Signup</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body  class="bg-info">
+    
+        <div class="container">
+        <div class="row justify-content-center">
+         <div class="col-lg-6 bg-light mt-3 ">
+           
+         
+            <h1 class=" m-8 font-weight-primary text-uppercase  text-info text-center">Register</h1>
+<div class="form-group text-primary ">
+     <label for="username">Username</label>
+       <input type="username" class="form-control"id="username" >
+        </div>
+ <div class="form-group text-primary ">
+        <label for="firstname">Firstname</label>
+         <input type="name " class="form-control"id="firstname">
+    </div>
+  <div class="form-group text-primary ">
+    <label for="input_lastname">Lastname</label>
+    <input type="lastname " class="form-control"id="lastname">
+  </div>
+  <div class="form-group text-primary ">
+    <label for="input_midllename">Middlename</label>
+    <input type="midllename " class="form-control"id="midlename">
+  </div>
+  <div class="form-group text-primary ">
+    <label for="passsword"> Password</label>
+    <input type="password" class="form-control" id="password">
+    
+ 
+  </div>
+  <div class="form-group text-primary ">
+    <label for="confirm_passsword"> Confirm Password</label>
+    <input type="password" class="form-control" id="confirm_password">
+
+
+
+  </div>
+  <div class ="form-group row">
+       <div class="col-md-6 offset-md-4">
+          <div class="checkbox">
+            <label><input type="checkbox" name=remember> Remember Me</label>
+</div>
+ 
+      <a class="btn btn-primary" href="index.html" role="button"> Sign in</a>
+      <button class=" btn btn-primary" id="register" role="button">register</button>
+      </div>
+      
+      </form>  
+      </section>
+    </body>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+
+    <script>
+    $(document). ready(function(){
+      $("#register").click(function(){
+        var username= $("#username").val();
+        var firstname= $("#firstname").val();
+        var lastname= $("#lastname").val();
+        var midlename= $("#midlename").val();
+        var password= $("#password").val();
+        var confirm_password= $("#confirm_password").val();
+        alert(username+"-"+ firstname+"-"+ lastname+"-"+midlename+"-"+password+"-"+ confirm_password+"-");
+       if(password === confirm_password){
+         alert("password matched")
+       }
+       else{
+         alert("password not matched  ")
+       }
+      })
+    });
+     
+      </script>
+   </html>
+    
